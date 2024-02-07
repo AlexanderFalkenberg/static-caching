@@ -1,9 +1,9 @@
 ---
 id: home
 blueprint: page
-title: 'Home - Testsss'
+title: Home
 updated_by: 7556b7ee-f8e2-4e60-99eb-930724f3a7df
-updated_at: 1707298899
+updated_at: 1707299725
 seo_noindex: false
 seo_nofollow: false
 seo_canonical_type: entry

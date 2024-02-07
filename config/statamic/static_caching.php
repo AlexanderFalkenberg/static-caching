@@ -1,5 +1,7 @@
 <?php
 
+use App\Caching\MyCustomInvalidator;
+
 return [
 
     /*
@@ -75,48 +77,13 @@ return [
 
     'invalidation' => [
 
-        'class' => \App\Caching\MyCustomInvalidator::class,
+        'class' => MyCustomInvalidator::class,
 
         'rules' => [
             'collections' => [
                 'blog' => [
                     'urls' => [
                         '/blog/*',
-                    ],
-                ],
-            ],
-            'taxonomies' => [
-                'tags' => [
-                    'urls' => [
-                        '/blog/tags/*',
-                    ],
-                ],
-            ],
-            'assets' => [
-                'main' => [
-                    'urls' => [
-                        '/assets/*',
-                    ],
-                ],
-            ],
-            'forms' => [
-                'contact' => [
-                    'urls' => [
-                        '/contact',
-                    ],
-                ],
-            ],
-            'globals' => [
-                'footer' => [
-                    'urls' => [
-                        '/',
-                    ],
-                ],
-            ],
-            'navs' => [
-                'main' => [
-                    'urls' => [
-                        '/',
                     ],
                 ],
             ],
